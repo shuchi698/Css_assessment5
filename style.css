@@ -1,0 +1,165 @@
+body{
+    background-image: linear-gradient(to right, plum,lightgreen);
+}
+h2{
+    text-align:center;
+    font-size: 34px;
+}
+.container{
+    width:40%;
+    margin-left:400px;
+    margin-top: 50px;
+}
+.row1{
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom: 38px;
+}
+.box1{
+    /* display: inline-block; */
+    animation-duration: 4s;
+    background-color: blue;
+    animation-name: anim1;
+    width:100px;
+    height:100px;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* transform: skewX(-20deg); */
+}
+@keyframes anim1{
+    0%{transform: skewx(0deg);
+    }
+    30%{transform: skewx(20deg);
+    }
+    60%{transform: skewx(-20deg);
+    }
+    100%{transform: skewx(0deg);
+    }
+}
+.box2,.box3{
+    animation-duration: 4s;
+    background-color: blue;
+    animation-name: anim;
+    margin-left:5px;
+    width:100px;
+    height:100px;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: skewX(20deg);
+}
+@keyframes anim{
+    0%{transform: skewx(0deg);
+    }
+    30%{transform: skewx(20deg);
+    }
+    60%{transform: skewx(-20deg);
+    }
+    100%{transform: skewx(0deg);
+    }
+}
+.row2{
+    display:flex;
+    justify-content:space-evenly;  
+}
+.box4,.box5,.box6{
+    animation-duration: 4s;
+    background-color:darkolivegreen;
+    animation-name: anime;
+    margin-bottom:60px;
+    width:100px;
+    height:100px;
+    animation-direction:alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: skew(0,25deg);
+}
+@keyframes anime{
+    50%{transform: skew(0,-25deg);}
+}
+.row3,.row4{
+    display:flex;
+    justify-content:space-evenly;
+    margin-bottom:10px;
+}
+.box7,.box8,.box9{
+    animation-duration: 4s;
+    background-color:palevioletred;
+    animation-name: anim2;
+    width:100px;
+    height:100px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(360deg);
+}
+@keyframes anim2{
+    0%{transform: rotate(0deg);
+    }
+    50%{transform: rotate(360deg);
+    }
+    100%{transform: rotate(0deg);
+    }
+}
+.box10{
+    animation-duration: 4s;
+    background-color: peru;
+    animation-name:anime1;
+    width:100px;
+    height:100px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes anime1{
+    0%{
+        transform: scaley(0.5);
+    }
+    50%{
+        transform: scaleY(1);
+    }
+    100%{
+        transform: scaley(0.5);
+    }
+}
+.box11{
+    animation-duration: 4s;
+    background-color: darkturquoise;
+    animation-name:anime2;
+    width:100px;
+    height:100px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes anime2 {
+    0% {
+      transform: scalex(0.5);
+    }
+    50% {
+      transform: scalex(1);
+    }
+    100% {
+      transform: scalex(0.5);
+    }
+  }
+.box12{
+    animation-duration:4s;
+    background-color:rosybrown;
+    animation-name: anim3;
+    width:100px;
+    height:100px;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: rotate(360deg);
+}
+@keyframes anim3{
+    0%{transform: rotate(0deg);
+    }
+    50%{transform: rotate(360deg);
+    }
+    100%{transform: rotate(0deg);
+    }
+}
+a{
+    font-size:34px;
+    margin-left: 100px;
+}

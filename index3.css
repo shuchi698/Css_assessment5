@@ -1,0 +1,88 @@
+body{
+    background-image:url("sky.jpg");
+    background-size:cover;
+    background-repeat: repeat-x;
+    width:100%;
+
+}
+.first{
+    text-align:center;
+}
+.one{
+    background-color:orangered;
+    font-size:32px;
+}
+.one1{
+    font-size:32px;
+}
+.one2{
+    background-color: green;
+    font-size:32px;
+}
+.a1{
+    background-image: url("city.png");
+    display:block;
+    background-size:cover;
+    position:absolute;
+    background-repeat: repeat-x;
+    z-index:2;
+    animation: anim 6s linear infinite;
+    width: 145%;
+    height: 341px;
+    top: 145px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+}
+@keyframes anim{
+    100%{
+        transform: translateX(-600px);
+    }
+}
+.b2{
+    background-image:url("road.jpg");
+    background-repeat: repeat-x;
+    position:absolute;
+    background-size: cover;
+    height:250px;
+    z-index:3;
+    animation: anim1 6s linear infinite;
+    top:480px;
+    width: 500%;
+    left:0px;
+}
+@keyframes anim1{
+  100%{
+      transform: translateX(-800px);
+  }
+}
+
+.c{
+    position:absolute;
+    top:319px;
+    z-index:4;
+    left:400px;
+}
+
+.front{
+    position:absolute;
+    top:441px;
+    z-index:5;
+    left:744px;
+    animation: animee 1s linear infinite;
+
+}
+.back{
+    position:absolute;
+    z-index:5;
+    left:438px;
+    top:441px;
+    animation: animee 1s linear infinite ;
+    /* transform:rotateX(360deg); */
+}
+@keyframes animee{
+    from{transform:rotate(0deg);
+    }
+    to{transform:rotate(360deg);
+    }
+}
